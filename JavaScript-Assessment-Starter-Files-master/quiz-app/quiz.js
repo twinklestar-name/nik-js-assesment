@@ -31,6 +31,6 @@ for(var i=0;i<answersEnteredByUser.length;i++)
 console.log("Score : "+sum);
 if(answersEnteredByUser.length>0)
 {
-    $("#result-modal h3")[0].innerText=$("#result-modal h3")[0].innerText+score+"/5";
+    $("#result-modal h3")[0].innerText=$("#result-modal h3")[0].innerText+sum+"/5";
     $("#modal-wrapper").css("display","block");
 }
