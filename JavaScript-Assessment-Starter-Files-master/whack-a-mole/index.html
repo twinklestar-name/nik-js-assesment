@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Whack a Mole!</title>
+</head>
+
+<body>
+    <h1>Whack-a-mole!</h1>
+    <br />
+    Score:<span class="score">0</span>
+
+    <button class="StartButton">Start!</button>
+
+    <div id="clock">Timer</div>
+
+    <div class="game">
+        <div class="hole hole1">
+            <div class="mole" id='1'></div>
+        </div>
+
+        <div class="hole hole2">
+            <div class="mole" id='2'></div>
+        </div>
+
+        <div class="hole hole3">
+            <div class="mole" id='3'></div>
+        </div>
+
+        <div class="hole hole4">
+            <div class="mole" id='4'></div>
+        </div>
+
+        <div class="hole hole5">
+            <div class="mole" id='5'></div>
+        </div>
+
+        <div class="hole hole6 id='6'">
+            <div class="mole"></div>
+        </div>
+
+    </div>
+    <div id="winPopup">
+        You won! <br />
+        Score: <span id="winScore"> </span>
+        <button id="playAgainButton" class="PopupButton">Play Again</button>
+    </div>
+    <div id="losePopup">
+        Better Luck Next Time! <br />
+        Score: <span id="loseScore"> </span>
+        <button id='retryButton' class="PopupButton">Retry</button>
+    </div>
+    <script src="/whack-hole-game/Whack-a-mole-project/index.js" type="text/javascript"></script>
+</body>
+
+</html>
